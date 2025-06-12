@@ -1,0 +1,528 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Resultados - Zonal Baby Fútbol de Salón 2025">
+  <Header />
+  
+  <main class="min-h-screen bg-gray-50">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Resultados del Torneo</h1>
+        <p class="text-xl">Todos los partidos por fecha</p>
+      </div>
+    </section>
+
+    <!-- Results by Date -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Date Navigation -->
+        <div class="flex flex-wrap justify-center gap-2 mb-12">
+          <button class="date-tab active-tab px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-colors" data-date="jueves">
+            Jueves 29 May
+          </button>
+          <button class="date-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 transition-colors" data-date="viernes">
+            Viernes 30 May
+          </button>
+          <button class="date-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 transition-colors" data-date="sabado">
+            Sábado 31 May
+          </button>
+          <button class="date-tab px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-semibold hover:bg-gray-300 transition-colors" data-date="domingo">
+            Domingo 1 Jun
+          </button>
+        </div>
+
+        <!-- Thursday Results -->
+        <div id="jueves" class="date-content">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Jueves 29 de mayo - Fase de Grupos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">6:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">JLC Ancuya</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">3</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">4</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Club Atlético Villa F.S.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">7:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Futplay Ipiales</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">3</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">6</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Racing F.S. Pasto</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">8:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">San Sebastián B</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">13</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">2</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Tierra de Talentos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">9:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">San Sebastián A</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">5</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">3</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Futuras Estrellas</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Friday Results -->
+        <div id="viernes" class="date-content hidden">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Viernes 30 de mayo - Fase de Grupos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">Grupo A</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Futuras Estrellas</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">7</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">4</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">JLC Ancuya</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">Grupo B</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Tierra de Talentos</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">1</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">16</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Futplay Ipiales</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">Grupo B</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Racing F.S. Pasto</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">6</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">3</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">San Sebastián B</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div class="text-center mb-4">
+                <span class="text-sm text-gray-500">Grupo A</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">Club Atlético Villa F.S.</p>
+                </div>
+                <div class="px-6">
+                  <span class="text-2xl font-bold text-primary">1</span>
+                  <span class="text-gray-400 mx-2">-</span>
+                  <span class="text-2xl font-bold text-primary">7</span>
+                </div>
+                <div class="text-center flex-1">
+                  <p class="font-semibold text-lg">San Sebastián A</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Saturday Results -->
+        <div id="sabado" class="date-content hidden">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Sábado 31 de mayo - Tercera Fecha y Cuartos</h2>
+          
+          <!-- Group Stage -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-semibold text-center mb-6 text-gray-800">Tercera Fecha - Fase de Grupos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-gray-500">11:30 AM - Grupo A</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Club Atlético Villa F.S.</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">3</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">3</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futuras Estrellas</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-gray-500">12:30 PM - Grupo B</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Racing F.S. Pasto</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">17</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">3</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Tierra de Talentos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-gray-500">1:30 PM - Grupo B</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futplay Ipiales</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">2</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">3</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">San Sebastián B</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-gray-500">2:30 PM - Grupo A</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">JLC Ancuya</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">0</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">4</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">San Sebastián A</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Quarter Finals -->
+          <div>
+            <h3 class="text-2xl font-semibold text-center mb-6 text-gray-800">Cuartos de Final</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg shadow-lg p-6 border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-accent font-semibold">6:00 PM - P1</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Racing F.S. Pasto</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-accent">10</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-accent">4</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Tierra de Talentos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg shadow-lg p-6 border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-accent font-semibold">7:00 PM - P4</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futuras Estrellas</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-accent">3</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-accent">1</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Club Atlético Villa F.S.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg shadow-lg p-6 border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-accent font-semibold">8:00 PM - P3</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">San Sebastián B</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-accent">3(0)</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-accent">3(2)</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futplay Ipiales</p>
+                  </div>
+                </div>
+                <div class="text-center mt-2">
+                  <span class="text-xs text-gray-600">Penales</span>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg shadow-lg p-6 border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-accent font-semibold">9:00 PM - P2</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">San Sebastián A</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-accent">9</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-accent">1</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">JLC Ancuya</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Sunday Finals -->
+        <div id="domingo" class="date-content hidden">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Domingo 1 de junio - Finales</h2>
+          
+          <!-- Semifinals -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-semibold text-center mb-6 text-gray-800">Semifinales</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg shadow-lg p-6 border-2 border-blue-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-primary font-semibold">1:00 PM - P1</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Racing F.S. Pasto</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">3</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">5</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">San Sebastián A</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg shadow-lg p-6 border-2 border-blue-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-primary font-semibold">2:00 PM - P2</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futplay Ipiales</p>
+                  </div>
+                  <div class="px-6">
+                    <span class="text-2xl font-bold text-primary">2</span>
+                    <span class="text-gray-400 mx-2">-</span>
+                    <span class="text-2xl font-bold text-primary">6</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-lg">Futuras Estrellas</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Finals -->
+          <div>
+            <h3 class="text-2xl font-semibold text-center mb-6 text-gray-800">Finales</h3>
+            <div class="space-y-6">
+              
+              <!-- Third Place -->
+              <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg shadow-lg p-8 border-2 border-orange-200 hover:shadow-xl transition-shadow">
+                <div class="text-center mb-4">
+                  <span class="text-sm text-orange-600 font-semibold">7:00 PM - TERCER PUESTO</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-xl">Racing F.S. Pasto</p>
+                    <span class="text-sm text-orange-600 font-medium">🏅 4to Puesto</span>
+                  </div>
+                  <div class="px-8">
+                    <span class="text-xl font-bold text-orange-600">4</span>
+                    <span class="text-gray-400 mx-3">-</span>
+                    <span class="text-xl font-bold text-orange-600">5</span>
+                  </div>
+                  <div class="text-center flex-1">
+                    <p class="font-semibold text-xl">Futplay Ipiales</p>
+                    <span class="text-sm text-orange-600 font-medium">🥉 3er Puesto</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Championship -->
+<div class="bg-gradient-to-br from-yellow-50 to-yellow-200 rounded-lg shadow-xl p-4 sm:p-6 md:p-8 border-4 border-yellow-400 hover:shadow-2xl transition-shadow">
+  <div class="text-center mb-4">
+    <span class="text-sm text-yellow-700 font-bold">8:00 PM - GRAN FINAL</span>
+  </div>
+  <div class="flex flex-col xs:flex-row sm:flex-row justify-between items-center gap-2 sm:gap-0">
+    <div class="text-center flex-1 min-w-[120px]">
+      <p class="font-semibold text-lg sm:text-2xl">San Sebastián A</p>
+      <span class="text-xs sm:text-sm text-yellow-700 font-medium">🥈 Subcampeón</span>
+    </div>
+    <div class="flex items-center justify-center px-0 sm:px-8 py-2 sm:py-0">
+      <span class="text-base sm:text-xl font-bold text-yellow-700">(4) 4</span>
+      <span class="text-gray-500 mx-2 sm:mx-4">-</span>
+      <span class="text-base sm:text-xl font-bold text-yellow-700">(5) 4</span>
+    </div>
+    <div class="text-center flex-1 min-w-[120px]">
+      <p class="font-semibold text-lg sm:text-2xl">Futuras Estrellas</p>
+      <span class="text-xs sm:text-sm text-yellow-700 font-medium">🥇 CAMPEÓN</span>
+    </div>
+  </div>
+  <div class="text-center mt-2">
+    <span class="text-xs text-gray-600">2 tiempos extras + penales</span>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.date-tab');
+    const contents = document.querySelectorAll('.date-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const targetDate = this.getAttribute('data-date');
+        
+        // Remove active class from all tabs
+        tabs.forEach(t => {
+          t.classList.remove('active-tab', 'bg-primary', 'text-white');
+          t.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        
+        // Add active class to clicked tab
+        this.classList.add('active-tab', 'bg-primary', 'text-white');
+        this.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        // Hide all content
+        contents.forEach(content => {
+          content.classList.add('hidden');
+        });
+        
+        // Show target content
+        const targetContent = document.getElementById(targetDate);
+        if (targetContent) {
+          targetContent.classList.remove('hidden');
+        }
+      });
+    });
+  });
+</script>

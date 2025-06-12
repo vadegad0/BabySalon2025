@@ -1,0 +1,141 @@
+---
+// src/pages/galeria.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Galería - Zonal Baby Fútbol de Salón 2025">
+  <Header />
+  
+  <main class="min-h-screen bg-gray-50">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Galería del Torneo</h1>
+        <p class="text-xl">Revive los mejores momentos del torneo</p>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <!-- Las imágenes se insertarán aquí con JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+  <div class="relative max-w-6xl max-h-screen w-full p-4">
+    <!-- Close Button -->
+    <button id="close-lightbox" aria-label="Cerrar" class="absolute top-4 right-4 text-white text-4xl bg-black/50 hover:bg-black/70 rounded-full w-12 h-12 flex items-center justify-center z-10">
+      &times;
+    </button>
+
+    <!-- Prev Button -->
+    <button id="prev-image" aria-label="Anterior" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10">
+      ‹
+    </button>
+
+    <!-- Next Button -->
+    <button id="next-image" aria-label="Siguiente" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10">
+      ›
+    </button>
+
+    <!-- Image Viewer -->
+    <div class="flex items-center justify-center h-full">
+      <img id="lightbox-image" src="" alt="Imagen ampliada del torneo" class="max-w-full max-h-full object-contain rounded-lg">
+    </div>
+
+    <!-- Counter only -->
+    <div class="absolute bottom-4 left-0 right-0 text-center text-white">
+      <p id="image-counter" class="text-sm text-gray-300"></p>
+    </div>
+  </div>
+</div>
+
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryGrid = document.getElementById('gallery-grid');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const imageCaption = document.getElementById('image-caption');
+    const imageCounter = document.getElementById('image-counter');
+    const closeLightbox = document.getElementById('close-lightbox');
+    const prevImage = document.getElementById('prev-image');
+    const nextImage = document.getElementById('next-image');
+
+    const totalImages = 282;
+    const galleryData = [];
+
+    for (let i = totalImages; i >= 1; i--) {
+      const filename = `/gallery/full/${i}.webp`;
+      galleryData.push({
+        id: i,
+        thumbnail: `/gallery/thumbs/${i}.webp`,
+        full: filename,
+        caption: `Foto ${i}`
+      });
+    }
+
+    let currentIndex = 0;
+
+    function renderGallery() {
+      galleryData.forEach((photo, index) => {
+        const photoElement = document.createElement('div');
+        photoElement.className = 'cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105 relative';
+        photoElement.innerHTML = `
+          <img src="${photo.thumbnail}" alt="${photo.caption}" class="w-full h-48 object-cover" loading="lazy">
+        `;
+        photoElement.addEventListener('click', () => openLightbox(index));
+        galleryGrid.appendChild(photoElement);
+      });
+    }
+
+    function openLightbox(index) {
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.remove('hidden');
+    }
+
+    function updateLightbox() {
+      const photo = galleryData[currentIndex];
+      lightboxImage.src = photo.full;
+      imageCounter.textContent = `Foto ${currentIndex + 1} de ${galleryData.length}`;
+    }
+
+    function closeModal() {
+      lightbox.classList.add('hidden');
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % galleryData.length;
+      updateLightbox();
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+      updateLightbox();
+    }
+
+    closeLightbox.addEventListener('click', closeModal);
+    nextImage.addEventListener('click', showNext);
+    prevImage.addEventListener('click', showPrev);
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowRight') showNext();
+        if (e.key === 'ArrowLeft') showPrev();
+      }
+    });
+
+    renderGallery();
+  });
+</script>

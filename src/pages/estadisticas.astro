@@ -1,0 +1,309 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Estadísticas - Zonal Baby Fútbol de Salón 2025">
+  <Header />
+  
+  <main class="min-h-screen bg-gray-50">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Estadísticas del Torneo</h1>
+        <p class="text-xl">Números y récords del campeonato</p>
+      </div>
+    </section>
+
+        <!-- Tournament Records -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Récords del Torneo</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6 border-2 border-red-200 text-center">
+            <div class="text-4xl mb-4">⚽</div>
+            <h3 class="text-xl font-bold text-red-800 mb-2">Mayor Goleada</h3>
+            <p class="text-lg font-semibold">Racing F.S. Pasto 17-3 Tierra de Talentos</p>
+            <p class="text-sm text-red-600">Sábado 31 de mayo</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border-2 border-blue-200 text-center">
+            <div class="text-4xl mb-4">🥅</div>
+            <h3 class="text-xl font-bold text-blue-800 mb-2">Más Goles en un Partido</h3>
+            <p class="text-lg font-semibold">20 goles</p>
+            <p class="text-sm text-blue-600">Racing 17-3 Tierra de Talentos</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 border-2 border-green-200 text-center">
+            <div class="text-4xl mb-4">🛡️</div>
+            <h3 class="text-xl font-bold text-green-800 mb-2">Mejor Defensa</h3>
+            <p class="text-lg font-semibold">San Sebastián A</p>
+            <p class="text-sm text-green-600">12 goles en contra</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6 border-2 border-yellow-200 text-center">
+            <div class="text-4xl mb-4">🏆</div>
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Campeón Invicto</h3>
+            <p class="text-lg font-semibold">No hubo</p>
+            <p class="text-sm text-yellow-600">Todos perdieron al menos 1 partido</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 border-2 border-purple-200 text-center">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-xl font-bold text-purple-800 mb-2">Mejor Ataque</h3>
+            <p class="text-lg font-semibold">Racing F.S. Pasto</p>
+            <p class="text-sm text-purple-600">46 goles a favor</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 border-2 border-orange-200 text-center">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold text-orange-800 mb-2">Final Dramática</h3>
+            <p class="text-lg font-semibold">definida por penales</p>
+            <p class="text-sm text-orange-600">1mer y 2do puesto</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Table -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Tabla Final del Torneo</h2>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th class="px-4 py-3 text-left">Pos</th>
+                <th class="px-4 py-3 text-left">Equipo</th>
+                <th class="px-4 py-3 text-center">PJ</th>
+                <th class="px-4 py-3 text-center">PG</th>
+                <th class="px-4 py-3 text-center">PE</th>
+                <th class="px-4 py-3 text-center">PP</th>
+                <th class="px-4 py-3 text-center">GF</th>
+                <th class="px-4 py-3 text-center">GC</th>
+                <th class="px-4 py-3 text-center">DG</th>
+                <th class="px-4 py-3 text-center">TA</th>
+                <th class="px-4 py-3 text-center">TR</th>
+                <th class="px-4 py-3 text-center">JL</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="bg-yellow-50 hover:bg-yellow-100">
+                <td class="px-4 py-3 font-bold text-center">🥇</td>
+                <td class="px-4 py-3 font-semibold">Futuras Estrellas</td>
+                <td class="px-4 py-3 text-center">6</td>
+                <td class="px-4 py-3 text-center">3</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">26</td>
+                <td class="px-4 py-3 text-center">19</td>
+                <td class="px-4 py-3 text-center">+7</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">10</td>
+              </tr>
+              <tr class="bg-gray-50 hover:bg-gray-100">
+                <td class="px-4 py-3 font-bold text-center">🥈</td>
+                <td class="px-4 py-3 font-semibold">San Sebastián A</td>
+                <td class="px-4 py-3 text-center">6</td>
+                <td class="px-4 py-3 text-center">5</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">34</td>
+                <td class="px-4 py-3 text-center">12</td>
+                <td class="px-4 py-3 text-center">+22</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">10</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">🥉</td>
+                <td class="px-4 py-3 font-semibold">Futplay Ipiales</td>
+                <td class="px-4 py-3 text-center">6</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">3</td>
+                <td class="px-4 py-3 text-center">31</td>
+                <td class="px-4 py-3 text-center">23</td>
+                <td class="px-4 py-3 text-center">+8</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">5</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">4</td>
+                <td class="px-4 py-3 font-semibold">Racing F.S. Pasto</td>
+                <td class="px-4 py-3 text-center">6</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">46</td>
+                <td class="px-4 py-3 text-center">23</td>
+                <td class="px-4 py-3 text-center">+23</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">20</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">5</td>
+                <td class="px-4 py-3 font-semibold">San Sebastián B</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">22</td>
+                <td class="px-4 py-3 text-center">13</td>
+                <td class="px-4 py-3 text-center">+9</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">5</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">6</td>
+                <td class="px-4 py-3 font-semibold">Club Atlético Villa F.S.</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">1</td>
+                <td class="px-4 py-3 text-center">2</td>
+                <td class="px-4 py-3 text-center">9</td>
+                <td class="px-4 py-3 text-center">16</td>
+                <td class="px-4 py-3 text-center">-7</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">7</td>
+                <td class="px-4 py-3 font-semibold">JLC Ancuya</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">8</td>
+                <td class="px-4 py-3 text-center">24</td>
+                <td class="px-4 py-3 text-center">-16</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-3 font-bold text-center">8</td>
+                <td class="px-4 py-3 font-semibold">Tierra de Talentos</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">4</td>
+                <td class="px-4 py-3 text-center">10</td>
+                <td class="px-4 py-3 text-center">56</td>
+                <td class="px-4 py-3 text-center">-46</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+                <td class="px-4 py-3 text-center">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Scorers -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Tabla de Goleadores</h2>
+        
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto">
+          <table class="w-full">
+            <thead class="bg-accent text-white">
+              <tr>
+                <th class="px-6 py-4 text-center">#</th>
+                <th class="px-6 py-4 text-left">Jugador</th>
+                <th class="px-6 py-4 text-left">Equipo</th>
+                <th class="px-6 py-4 text-center">Goles</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="bg-yellow-50">
+                <td class="px-6 py-4 text-center font-bold text-2xl">🥇</td>
+                <td class="px-6 py-4 font-bold text-lg">Santiago Savedra</td>
+                <td class="px-6 py-4 font-semibold">San Sebastián A</td>
+                <td class="px-6 py-4 text-center font-bold text-accent text-xl">16</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 text-center font-bold">2</td>
+                <td class="px-6 py-4 font-semibold">Johan Zambrano</td>
+                <td class="px-6 py-4">Racing F.S. Pasto</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">9</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-center font-bold">3</td>
+                <td class="px-6 py-4 font-semibold">Yulian Montenegro</td>
+                <td class="px-6 py-4">Racing F.S. Pasto</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">8</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 text-center font-bold">4</td>
+                <td class="px-6 py-4 font-semibold">David López</td>
+                <td class="px-6 py-4">Futuras Estrellas</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">8</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-center font-bold">5</td>
+                <td class="px-6 py-4 font-semibold">Matías Otaya</td>
+                <td class="px-6 py-4">Racing F.S. Pasto</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">7</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="px-6 py-4 text-center font-bold">6</td>
+                <td class="px-6 py-4 font-semibold">Aron Ramires</td>
+                <td class="px-6 py-4">San Sebastián A</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">6</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-center font-bold">7</td>
+                <td class="px-6 py-4 font-semibold">Samuel Ceballos</td>
+                <td class="px-6 py-4">Futplay Ipiales</td>
+                <td class="px-6 py-4 text-center font-bold text-lg">6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Tournament Summary -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Resumen del Torneo</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="text-3xl font-bold text-primary mb-2">8</div>
+            <div class="text-gray-600">Equipos</div>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="text-3xl font-bold text-secondary mb-2">20</div>
+            <div class="text-gray-600">Partidos</div>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="text-3xl font-bold text-accent mb-2">215</div>
+            <div class="text-gray-600">Goles Total</div>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="text-3xl font-bold text-danger mb-2">10.75</div>
+            <div class="text-gray-600">Promedio Goles/Partido</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>

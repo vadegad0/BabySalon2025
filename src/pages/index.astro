@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Zonal Baby Fútbol de Salón 2025 - Villa Garzón, Putumayo">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-secondary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <img 
+  src="/svg/logo-small.svg" 
+  alt="Logo Zonal Baby Fútbol de Salón 2025"
+  class="mx-auto mb-4 animate-fade-in w-48 md:w-80 max-w-full h-auto"
+/>
+        <p class="text-xl md:text-2xl mb-4 animate-slide-up">
+          Villa Garzón, Putumayo — 29 mayo al 2 junio 2025
+        </p>
+        <p class="text-lg mb-8 animate-slide-up">
+          Clasificatorio a la final internacional Medellín 2026 • Categoría 2014 - 2016
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-bounce-in">
+          <a href="/resultados" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Ver Resultados
+          </a>
+          <a href="/galeria" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+            Ver Galería
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tournament Stats -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <div class="text-3xl font-bold text-primary mb-2">8</div>
+            <div class="text-gray-600">Equipos</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <div class="text-3xl font-bold text-secondary mb-2">20</div>
+            <div class="text-gray-600">Partidos</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <div class="text-3xl font-bold text-accent mb-2">5</div>
+            <div class="text-gray-600">Días</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <div class="text-3xl font-bold text-danger mb-2">215</div>
+            <div class="text-gray-600">Goles Total</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podium Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Podio Final</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <!-- Second Place -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform order-2 md:order-1 flex flex-col items-center">
+            <img src="/logos/logo-san-sebastian.webp" alt="logo San Sebastian A">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">🥈 Subcampeón</h3>
+            <p class="text-lg font-semibold text-gray-700">San Sebastián A</p>
+            <p class="text-sm text-gray-500 mt-2">Mejor defensa del torneo</p>
+          </div>
+          
+          <!-- First Place -->
+          <div class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg shadow-xl p-8 text-center transform hover:scale-105 transition-transform order-1 md:order-2 flex flex-col items-center">
+            <img src="/logos/logo-futuras-estrellas.webp" alt="logo Futuras Estrellas">
+            <h3 class="text-xl font-bold text-white mb-2">🥇Campeón</h3>
+            <p class="text-lg font-semibold text-white">Futuras Estrellas</p>
+            <p class="text-sm text-yellow-100 mt-2">Ganó en penales</p>
+          </div>
+          
+          <!-- Third Place -->
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform order-3 flex flex-col items-center">
+              <img src="/logos/logo-futplay.webp" alt="logo futplay Ipiales"  />
+              <h3 class="text-xl font-bold text-gray-900 mb-2">🥉 Tercer Puesto</h3>
+              <p class="text-lg font-semibold text-gray-700">Futplay Ipiales</p>            
+            </div>
+        </div>
+
+        <!-- Fourth Place -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center max-w-md mx-auto mb-12 hover:scale-105 transition-transform flex flex-col items-center">
+          <img src="/logos/logo-racing-fc-pasto.webp" alt="logo Racing Pasto">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">🏅 Cuarto Puesto</h3>
+          <p class="text-gray-700">Racing F.S. Pasto</p>
+          <p class="text-sm text-gray-500">Mejor ataque del torneo</p>
+        </div>
+
+        <!-- Individual Awards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div class="text-4xl mb-4">⚽</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Goleador</h3>
+            <p class="text-lg font-semibold text-gray-700">Santiago Savedra</p>
+            <p class="text-sm text-gray-600">San Sebastián A - 16 goles</p>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <div class="text-4xl mb-4">🥅</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Valla Menos Vencida</h3>
+            <p class="text-lg font-semibold text-gray-700">Juan Alvarez - Izaek Carvajal</p>
+            <p class="text-sm text-gray-600">San Sebastián A-12 goles en contra</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Explora el Torneo</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <a href="/equipos" class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 text-center hover:shadow-lg transition-all transform hover:scale-105 border-2 border-blue-200">
+            <div class="text-4xl mb-4">👥</div>
+            <h3 class="text-xl font-bold text-blue-800 mb-2">Equipos</h3>
+            <p class="text-blue-600">Conoce los 8 equipos participantes</p>
+          </a>
+
+          <a href="/resultados" class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 text-center hover:shadow-lg transition-all transform hover:scale-105 border-2 border-green-200">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-xl font-bold text-green-800 mb-2">Resultados</h3>
+            <p class="text-green-600">Todos los partidos por fecha</p>
+          </a>
+
+          <a href="/estadisticas" class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6 text-center hover:shadow-lg transition-all transform hover:scale-105 border-2 border-yellow-200">
+            <div class="text-4xl mb-4">📈</div>
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Estadísticas</h3>
+            <p class="text-yellow-600">Tabla final y goleadores</p>
+          </a>
+
+          <a href="/galeria" class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 text-center hover:shadow-lg transition-all transform hover:scale-105 border-2 border-purple-200">
+            <div class="text-4xl mb-4">📸</div>
+            <h3 class="text-xl font-bold text-purple-800 mb-2">Galería</h3>
+            <p class="text-purple-600">200+ fotos del torneo</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Tournament Info -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-900">Información del Torneo</h2>
+        
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="text-left">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Detalles del Evento</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li><strong>📍 Lugar:</strong> Villa Garzón, Putumayo</li>
+                <li><strong>📅 Fechas:</strong> 29 mayo - 2 junio 2025</li>
+                <li><strong>🏆 Categoría:</strong> Baby (2014-2016)</li>
+                <li><strong>🎯 Objetivo:</strong> Clasificatorio a Medellín 2026</li>
+              </ul>
+            </div>
+
+            <div class="text-left">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Coordinación</h3>
+              <div class="text-gray-700">
+                <p><strong>Coordinador:</strong></p>
+                <p>Oscar Armando Bolaños Castro</p>
+                <p class="text-sm text-gray-600 mt-2">
+                  Fundación Alianza Sureña<br>
+                  ZONAL BABY FÚTBOL DE Salón<br>
+                  Sur Occidente de Colombia
+                </p>
+                <p class="mt-2"><strong>📱 Móvil:</strong> 3183773718</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 1.2s ease-out;
+  }
+</style>
