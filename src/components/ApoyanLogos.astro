@@ -1,0 +1,78 @@
+---
+const logos = [
+  {
+    src: "/apoyan/logo-empresa-de-energia-del-putumato.webp",
+    alt: "Logo Empresa de Energía del Putumayo",
+  },
+  {
+    src: "/apoyan/logo-Motoclinic.webp",
+    alt: "Logo Moto Clinic",
+  },
+  {
+    src: "/apoyan/logo-osbol.webp",
+    alt: "Logo Osbol",
+  },
+  {
+    src: "/apoyan/logo-antioquena-futbol-salon.webp",
+    alt: "Logo Liga Antioqueña de Fútbol de Salón",
+  },
+  {
+    src: "/apoyan/logo-alianza-surena.webp",
+    alt: "Logo Alianza Sureña",
+  },
+  {
+    src: "/apoyan/logo-los-paisitas.webp",
+    alt: "Logo Los Paisitas",
+  },
+  {
+    src: "/apoyan/logo-fortaleza.webp",
+    alt: "Logo Fortaleza",
+  }
+];
+---
+<section class="py-20 bg-gradient-to-b from-white via-yellow-50 to-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-14 flex justify-center items-center gap-3">
+      <span class="animate-wiggle text-yellow-400 text-5xl">🧡</span>
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
+        Nos Apoyan
+      </span>
+    </h2>
+
+    <!-- Carousel -->
+    <div class="relative overflow-hidden">
+      <div class="flex gap-16 animate-scroll hover:[animation-play-state:paused] whitespace-nowrap">
+        {logos.concat(logos).map((logo, index) => (
+          <div class="flex-shrink-0 w-56 h-40 flex items-center justify-center">
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              class="max-h-28 object-contain mx-auto transition-transform duration-300 hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-scroll {
+    animation: scroll 35s linear infinite;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+</style>
